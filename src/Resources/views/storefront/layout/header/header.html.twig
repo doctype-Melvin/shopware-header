@@ -1,10 +1,15 @@
 {% block layout_my_header %}
+<div class="header-container">
     {% block my_header_logo %}
-        <h1>Hello Worldi</h1>
+        <div class="header-logo-container">
+        <span class="logo-fashion">fashion</span>
+        <span class="logo-8">8</span>
+        <span class="logo-eight">Eight</span>
+        </div>
     {% endblock %}
     {% block my_header_navigation %}
-        <nav>
-            <ul>
+        <nav class="header-navigation">
+            <ul class="navigation-links">
             <a href={{ path('frontend.account.payment.page') }}><li>DAMEN</li></a>
             <a href={{ path('frontend.account.payment.page') }}><li>HERREN</li></a>
             <a href={{ path('frontend.account.payment.page') }}><li>SALE</li></a>
@@ -13,20 +18,23 @@
         </nav>
     {% endblock %}
     {% block my_header_icons %}
-    <a href={{ path('frontend.account.payment.page') }} class="search">
+    <div class="icon-container">
+    <a href={{ path('frontend.account.payment.page') }} class="icon search">
         {% sw_icon 'search' %}
     </a>
-    <a href={{ path('frontend.account.payment.page') }} class="favorite">
+    <a href={{ path('frontend.account.payment.page') }} class="icon favorite">
         {% sw_icon 'heart' %}
     </a>
-    <a href={{ path('frontend.account.payment.page') }} class="avatar">
+    <a href={{ path('frontend.account.payment.page') }} class="icon avatar">
         {% sw_icon 'avatar' %}
     </a>
-    <a href={{ path('frontend.account.payment.page') }} class="cart">
+    <a href={{ path('frontend.account.payment.page') }} class="icon cart">
         {% sw_icon 'cart' %}
         <div class="item-count">
             2
         </div>
     </a>
+    </div>
     {% endblock %}
+    </div>
 {% endblock %}
