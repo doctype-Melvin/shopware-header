@@ -5,11 +5,28 @@
     {% block my_header_navigation %}
         <nav>
             <ul>
-            <a><li>DAMEN</li></a>
-            <a><li>HERREN</li></a>
-            <a><li>SALE</li></a>
-            <a><li>#FASHIONEIGHT</li></a>
+            <a href={{ path('frontend.account.payment.page') }}><li>DAMEN</li></a>
+            <a href={{ path('frontend.account.payment.page') }}><li>HERREN</li></a>
+            <a href={{ path('frontend.account.payment.page') }}><li>SALE</li></a>
+            <a href={{ path('frontend.account.payment.page') }}><li>#FASHIONEIGHT</li></a>
             </ul>
         </nav>
+    {% endblock %}
+    {% block my_header_icons %}
+    <a href={{ path('frontend.account.payment.page') }} class="search">
+        {% sw_icon 'search' %}
+    </a>
+    <a href={{ path('frontend.account.payment.page') }} class="favorite">
+        {% sw_icon 'heart' %}
+    </a>
+    <a href={{ path('frontend.account.payment.page') }} class="avatar">
+        {% sw_icon 'avatar' %}
+    </a>
+    <a href={{ path('frontend.account.payment.page') }} class="cart">
+        {% sw_icon 'cart' %}
+        <div class="item-count">
+            2
+        </div>
+    </a>
     {% endblock %}
 {% endblock %}
