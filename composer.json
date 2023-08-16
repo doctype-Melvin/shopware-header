@@ -1,0 +1,18 @@
+{
+	"name": "mlvn/my-header",
+	"description": "Theme My Header",
+	"type": "shopware-platform-plugin",
+	"license": "MIT",
+	"autoload": {
+		"psr-4": {
+			"MyHeader\\": "src/"
+		}
+	},
+	"extra": {
+		"shopware-plugin-class": "MyHeader\\MyHeader",
+		"label": {
+			"de-DE": "Theme MyHeader plugin",
+			"en-GB": "Theme MyHeader plugin"
+		}
+	}
+}
