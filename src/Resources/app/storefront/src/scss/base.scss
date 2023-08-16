@@ -1,3 +1,7 @@
+:root {
+	--accent-color: #d2a371;
+}
+
 .header-container,
 .header-logo-container,
 .navigation-links,
@@ -12,8 +16,34 @@
 	align-items: center;
 }
 
+.header-logo-container {
+	position: relative;
+}
+
+.logo-fashion,
+.logo-8,
+.logo-eight {
+	font-weight: 600;
+	font-size: 1rem;
+}
+
+.logo-fashion {
+	color: var(--accent-color);
+}
+
+.logo-8 {
+	color: #fff;
+	z-index: 3;
+}
+
+.logo-eight {
+	color: #000;
+	position: absolute;
+	right: -42px;
+}
+
 .header-navigation {
-	width: 30%;
+	width: 40%;
 }
 
 .navigation-links {
@@ -25,11 +55,13 @@
 	a {
 		text-decoration: none;
 		color: black;
+		font-weight: 600;
 	}
 }
 
 .icon-container {
 	width: 25%;
+	padding-bottom: 5px;
 	justify-content: space-evenly;
 }
 
@@ -42,15 +74,15 @@
 
 	div {
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: -5px;
+		right: -5px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		height: 15.68px;
 		width: 15.68px;
 		border-radius: 50%;
-		background-color: #d2a371;
+		background-color: var(--accent-color);
 		color: #fff;
 		text-align: center;
 		font-size: 0.75rem;
